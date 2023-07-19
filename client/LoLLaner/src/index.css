@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: 'Playfair Display', serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  overflow-x: hidden;
+  font-size: 36px;
+  background-color: #111111;
+  font-family: 'DM Serif Text', serif;
+  color: #F8F8F8;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@layer components {
+  .navbutton {
+    @apply text-center hover:text-secondary transition-colors duration-200 underline;
+  }
+
+  .lrgbutton {
+    @apply text-white rounded-[8px] h-fit w-fit text-center my-4 px-12 py-4 hover:bg-opacity-75 
+    transition-colors duration-200 shadow-md bg-secondary
+  }
+
+  .submitbutton {
+    @apply text-black rounded-[8px] h-fit w-fit text-center my-2 px-10 py-3 hover:bg-opacity-75 
+    transition-colors duration-200 font-bold shadow-md bg-white
+  }
+}
