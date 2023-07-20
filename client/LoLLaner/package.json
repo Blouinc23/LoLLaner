@@ -13,7 +13,9 @@
     "dotenv": "^16.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react-router-dom": "^6.14.1",
+    "require-context.macro": "^1.2.2",
+    "vite-plugin-require": "^1.1.10"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

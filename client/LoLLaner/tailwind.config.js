@@ -1,5 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+import vitePluginRequire from "vite-plugin-require";
 export default {
+  plugins: [
+		vitePluginRequire({
+			// @fileRegex RegExp
+			// optional：default file processing rules are as follows
+			// fileRegex:/(.jsx?|.tsx?|.vue)$/
+
+            // Conversion mode. The default mode is import
+            // importMetaUrl | import
+            // importMetaUrl see https://vitejs.cn/guide/assets.html#new-url-url-import-meta-url 
+            // translateType: "importMetaUrl" | "import";
+		}),
+	],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
