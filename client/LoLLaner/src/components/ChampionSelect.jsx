@@ -22,7 +22,7 @@ function ChampionSelect({title,changeChamp}) {
         });
 
     useEffect(() => {
-        console.log(championObj);
+        
     }, [selectedChamp])
 
   return (
