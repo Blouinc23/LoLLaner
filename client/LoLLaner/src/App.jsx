@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
+    <div className='z-50 relative'>
       <Navbar/>
+      </div>
 
       <body>
         <main>

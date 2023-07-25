@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 function Navbar(props) {
     return (
-        <div className='flex items-center justify-between w-screen mt-[15px]'>
+        <div className='flex items-center justify-between w-screen mt-[15px] z-50'>
             <Link to='/'>
             <div className=''>
                 <img src={LoLLogo} alt="LoL Logo" className='h-[80px] ml-[20px] shadow-primaryWhite hover:shadow-2xl bg-primaryWhite bg-opacity-0 hover:bg-opacity-5 rounded-xl transition-all duration-200'/>
